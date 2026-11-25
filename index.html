@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PSN Prototypes</title>
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #5c5c5c;
+      --line: #e2e2e2;
+      --bg: #f7f6f3;
+      --card: #ffffff;
+      --accent: #0b5fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at top left, #ebe8e1 0%, transparent 50%),
+        radial-gradient(ellipse at bottom right, #e4ece8 0%, transparent 45%),
+        var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    main {
+      width: min(560px, 100%);
+    }
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    p {
+      margin: 0 0 1.75rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+    a {
+      display: block;
+      padding: 1rem 1.15rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--ink);
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    a:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 16px rgba(11, 95, 255, 0.08);
+    }
+    a strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+    a span {
+      display: block;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>PSN Prototypes</h1>
+    <p>PDP personalization prototypes for testing. Open either version below.</p>
+    <ul>
+      <li>
+        <a href="psn-prototype_16.html">
+          <strong>Prototype 16</strong>
+          <span>Make it yours — PDP personalization</span>
+        </a>
+      </li>
+      <li>
+        <a href="psn-prototype_2_10.html">
+          <strong>Prototype 2.10</strong>
+          <span>Make it yours — PDP personalization (v2)</span>
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
